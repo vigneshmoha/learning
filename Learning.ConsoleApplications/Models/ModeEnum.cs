@@ -3,6 +3,7 @@
     public enum ModeEnum
     {
         ConsoleGames,
-        Tools
+        Tools,
+        Default
     }
 }

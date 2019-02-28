@@ -14,13 +14,17 @@ namespace Learning.ConsoleApplications
         {
             RegisterDependencies();
 
+            Console.Write("Enter debugging mode..");
+            Console.ReadLine();
+
             try
             {
                 var parserResult = Parser.Default.ParseArguments<Options>(args);
                 parserResult.WithParsed(options =>
                 {
-                    Enum.TryParse(options.Mode, out ModeEnum option);
-                    switch (option)
+                    var mode = ConsoleHelper.ModeEnumConverter(options.Mode);
+                    
+                    switch (mode)
                     {
                         case ModeEnum.ConsoleGames:
                             ShowConsoleGames();
@@ -30,6 +34,8 @@ namespace Learning.ConsoleApplications
                             break;
                         case ModeEnum.Tools:
                             break;
+                        case ModeEnum.Default:
+                            throw new Exception("Mode not found..");
                         default:
                             throw new ArgumentOutOfRangeException();
                     }

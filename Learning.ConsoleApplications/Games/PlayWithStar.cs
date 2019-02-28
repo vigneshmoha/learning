@@ -21,6 +21,7 @@ namespace Learning.ConsoleApplications.Games
 
         private static void AcceptInput()
         {
+
             var key = Console.ReadKey();
             switch (key.Key)
             {
