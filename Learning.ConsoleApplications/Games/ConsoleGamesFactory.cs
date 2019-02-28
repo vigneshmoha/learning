@@ -17,6 +17,9 @@ namespace Learning.ConsoleApplications.Games
                 case 2:
                     consoleGameObject = new CatchTheObject();
                     break;
+                case 3:
+                    consoleGameObject = new TicTacToe();
+                    break;
                 default:
                     throw new Exception("No games found for your inputs");
             }
