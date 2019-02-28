@@ -59,7 +59,7 @@ namespace Learning.ConsoleApplications
 
         private static void ShowConsoleGames()
         {
-            var gameMenu = "*** List of Games *** \n 1. Play with a star \n 2. Catch the objects";
+            var gameMenu = "*** List of Games *** \n1. Play with a star \n2. Catch the objects \n3. Tic Tac Toe\n";
 
             ConsoleHelper.PrintMessage(gameMenu);
         }
