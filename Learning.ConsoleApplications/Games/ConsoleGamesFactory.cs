@@ -16,6 +16,8 @@ namespace Learning.ConsoleApplications.Games
                 case 1:
                     consoleGameObject = new PlayWithStar();
                     break;
+                default:
+                    throw new Exception("No games found for your inputs");
             }
 
             return consoleGameObject;
