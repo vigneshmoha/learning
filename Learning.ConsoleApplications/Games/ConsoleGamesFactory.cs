@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Reflection.Metadata.Ecma335;
-using System.Text;
+using Learning.ConsoleApplications.Games.Concrete;
 
 namespace Learning.ConsoleApplications.Games
 {
@@ -9,7 +7,7 @@ namespace Learning.ConsoleApplications.Games
     {
         public virtual IConsoleGames GetConsoleGameObject(int gameIdentifier)
         {
-            IConsoleGames consoleGameObject = null;
+            IConsoleGames consoleGameObject;
 
             switch (gameIdentifier)
             {

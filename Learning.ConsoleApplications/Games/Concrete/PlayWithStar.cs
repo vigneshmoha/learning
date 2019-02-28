@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Learning.ConsoleApplications.Games
+namespace Learning.ConsoleApplications.Games.Concrete
 {
     public class PlayWithStar : IConsoleGames
     {

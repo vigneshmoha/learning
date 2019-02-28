@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Net.NetworkInformation;
-using System.Text;
 
-namespace Learning.ConsoleApplications.Games
+namespace Learning.ConsoleApplications.Games.Concrete
 {
     public class CatchTheObject : IConsoleGames
     {
