@@ -16,7 +16,7 @@ func partition(array []int) int {
 	lastelement := array[lastindex]
 	index := -1
 
-	for j:=0; j < lastindex: j++ {
+	for j:=0; j < lastindex; j++ {
 		if array[j] <= lastelement {
 			index++
 			array[index], array[j] = array[j], array[index]
