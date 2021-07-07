@@ -23,6 +23,6 @@ func partition(array []int) int {
 		}
 	}
 
-	array[i+1], array[lastindex] = array[lastindex], array[index+1]
+	array[index+1], array[lastindex] = array[lastindex], array[index+1]
 	return index + 1
 }
