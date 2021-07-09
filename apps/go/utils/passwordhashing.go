@@ -15,8 +15,7 @@ func CheckPasswordHash(password, hash string) bool {
 	return err == nil
 }
 
-func TestPasswordGen() {
-	password := "password123"
+func TestPasswordGen(password string) {
 	hash, _ := HashPassword(password)
 
 	fmt.Println("Password: ", password)
